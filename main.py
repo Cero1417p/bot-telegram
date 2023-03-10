@@ -18,7 +18,6 @@ def send_welcome(message):
 	print("message : ",message)
 	bot.reply_to(message, "HELP")
 
-
 @bot.message_handler(func=lambda m: True)
 def echo_all(message):
 	bot.reply_to(message, message.text)
